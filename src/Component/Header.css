@@ -1,0 +1,81 @@
+.App-logo {
+    height: 80%;
+    pointer-events: none;
+    margin-right: 30px;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 5s ease-in-out;
+    }
+  }
+  
+  .App-header {
+    padding: 0 30px;
+    background-color: white;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    font-size: calc(2px + 2vmin);
+    color: rgb(29, 26, 195);
+    overflow: hidden;
+    /* border: 1px solid #eee; */
+    z-index: 99;
+    position: relative;
+  }
+  .App-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    flex: 1;
+  }
+  .App-title div {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: left;
+  }
+  .App-title h1{
+    margin: 0;
+  }
+  .App-title div span{
+    font-size: calc(2vmin - 8px);
+    margin-left: 6px;
+  }
+  .App-title .subtitle {
+    font-size: calc(2vmin - 8px);
+    color: #ccc;
+    margin-top: 5px;
+  }
+  .App-doc-version  {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .App-doc-version select {
+    margin-top: 15px;
+    font-size: calc(1vmin + 3px);
+  }
+  .App-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(15deg);
+    }
+    50%  {
+      transform: rotate(-15deg);
+    }
+    100% {
+      transform: rotate(15deg);
+    }
+  }

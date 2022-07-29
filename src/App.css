@@ -1,87 +1,5 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 80%;
-  pointer-events: none;
-  margin-right: 30px;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 5s ease-in-out;
-  }
-}
-
-.App-header {
-  padding: 0 30px;
-  background-color: white;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: left;
-  font-size: calc(2px + 2vmin);
-  color: rgb(29, 26, 195);
-  overflow: hidden;
-  /* border: 1px solid #eee; */
-  z-index: 99;
-  position: relative;
-}
-.App-title{
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
   text-align: left;
-  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-  flex: 1;
-}
-.App-title p {
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: left;
-}
-.App-title h1{
-  margin: 0;
-}
-.App-title p span{
-  font-size: calc(2vmin - 8px);
-  margin-left: 6px;
-}
-.App-title .subtitle {
-  font-size: calc(2vmin - 8px);
-  color: #ccc;
-  margin-top: 5px;
-}
-.App-doc-version  {
-  margin-right: 30px;
-  display: flex;
-  flex-direction: column;
-}
-.App-doc-version select {
-  margin-top: 15px;
-  font-size: calc(1vmin + 3px);
-}
-.App-link {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(15deg);
-  }
-  50%  {
-    transform: rotate(-15deg);
-  }
-  100% {
-    transform: rotate(15deg);
-  }
 }
 
 .App-body {
@@ -95,63 +13,13 @@
   overflow: hidden;
 }
 
-.App-install-bar {
-  position: absolute;
-  width: 25vw;
-  z-index: 1;
-  cursor: pointer;
-}
-.App-install-bar .App-install {
-  position: absolute;
-  background-color: #8898b4;
-  height: 50px;
-  width: 20vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(2vmin);
-  color: white;
-  transition: background-color 0.2s;
-}
-.App-install-bar:hover .App-install{
-  background-color: #aab4c6;
-}
-.App-install-bar:hover .App-install::after {
-  background-color: #aab4c6;
-}
-.App-install-bar .App-install::after {
-  position: absolute;
-  content: '';
-  background-color: #8898b4;
-  height: 50px;
-  width: 280px;
-  bottom: 0;
-  left: 100%;
-  transform: rotate(-45deg);
-  transform-origin: left bottom;
-  box-shadow: 0 0 10px #282c349e;
-  transition: background-color 0.2s;
-  z-index: -1;
-}
-
-.App-sidebar {
-  width: 20vw;
-  background-color: #282c34;
-  box-shadow: 0 0 10px #282c349e;
-  /* position: relative;
-  z-index: -3; */
-}
-
 .App-content {
   box-shadow: inset 0px 10px 10px -10px #282c349e,
               inset 10px 0px 10px -10px #282c349e;
   background-color: white;
   width: 80vw;
+  overflow-x: scroll;
+  padding: 60px 40px;
   /* position: relative;
   z-index: -2; */
-}
-.sidebar-content {
-  margin-top: 40px;
-  color: white;
 }
