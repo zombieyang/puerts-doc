@@ -72,5 +72,6 @@
     list-style: '- ';
   }
   .sidebar-content .catalog-block li {
+    font-size: 1.2vw;
     margin-top: .2vh;
   }

@@ -1,7 +1,14 @@
 import logo from './puerts-logo.png';
 import './Header.css'
+import SubSite from '../subsite';
 
-export default function Header() {
+export default function Header(props: { lang: typeof SubSite.lang, engine: typeof SubSite.engine }) {
+    function OnEngineChange(e: any) {
+        SubSite.changeEngine(e.target.value);
+    }
+    function OnLangChange(e: any) {
+        SubSite.changeLang(e.target.value);
+    }
     return (
         <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
@@ -10,13 +17,13 @@ export default function Header() {
                 <span className="subtitle">can be pronounced as pu-erh TS（普洱TS）</span>
             </section>
             <section className="App-doc-version">
-                <select name="engine" id="engine">
-                <option value="Unreal">Unreal</option>
-                <option value="Unity">Unity</option>
+                <select name="engine" id="engine" value={props.engine} onChange={OnEngineChange}>
+                    <option value="unreal">Unreal</option>
+                    <option value="unity">Unity</option>
                 </select>
-                <select name="language" id="language">
-                <option value="English">English</option>
-                <option value="中文">中文</option>
+                <select name="language" id="language" value={props.lang} onChange={OnLangChange}>
+                    <option value="en">English</option>
+                    <option value="zhcn">简体中文</option>
                 </select>
             </section>
             <section className="App-link">
