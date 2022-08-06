@@ -1,12 +1,12 @@
 import Link from 'next/link';
 // @ts-ignore
 import UnityCatalog from '!yaml-loader!./catalog/Unity.yml'
-import { useRouter } from 'next/router';
-const UnrealCatalog: any[] = [];
+// @ts-ignore
+import UnrealCatalog from '!yaml-loader!./catalog/Unreal.yml'
 
 function ALink(item, engine, lang) {
     if (item.md) {
-        return <Link href={`/${engine}/${lang}/${item.md}`}><a href={`/${engine}/${lang}`}>{item[lang]}</a></Link>;
+        return <Link href={`/${engine}/${lang}/${item.md}`}><a href={`/${engine}/${lang}/${item.md}`} onClick={(e) => { e.preventDefault }}>{item[lang]}</a></Link>;
 
     } else {
         return <span>{item[lang]}</span>;

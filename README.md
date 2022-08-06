@@ -1,27 +1,12 @@
-# Basic API routes example
+# PuerTS文档项目
+本项目会自动根据md生成文档页面。我们只需要维护文档md以及一个目录即可。
 
-Next.js ships with [API routes](https://nextjs.org/docs/api-routes/introduction) which provides an easy solution to build your own `API`. This example shows how to create multiple `API` endpoints with serverless functions, which can execute independently.
-
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/api-routes)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/api-routes&project-name=api-routes&repository-name=api-routes)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example api-routes api-routes-app
+#### 目录文件位置:
 ```
-
-```bash
-yarn create next-app --example api-routes api-routes-app
+/components/catalog/Unity.yml
+/components/catalog/Unreal.yml
 ```
+采用yml格式编写，按现有格式仿写即可
 
-```bash
-pnpm create next-app --example api-routes api-routes-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+#### md文件位置
+/public/doc/

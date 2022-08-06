@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Header(props: { lang: string, engine: string }) {
     function OnEngineChange(e: any) {
         // SubSite.changeEngine(e.target.value);
-        location.href = `/${e.target.value}/${props.lang}/readme.md`
+        location.href = `/${e.target.value}/${props.lang}/readme`
     }
     function OnLangChange(e: any) {
         location.href = location.href.replace(props.lang, e.target.value);

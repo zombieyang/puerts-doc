@@ -15,6 +15,11 @@ export interface LayoutProps {
     doc: string
 }
 export default function Layout(props: LayoutProps) {
+    if (typeof localStorage != 'undefined') {
+        localStorage.setItem('puerts_doc_last_engine', props.engine);
+        localStorage.setItem('puerts_doc_last_lang', props.lang);  
+    }
+
     let { data, error } = useSWR(`/doc/unity/${props.lang}/${props.doc}.md`, fetcher)
     if (error) data = `# Failed to load "${props.doc}" content: ${error}`
     else if (!data) data = ''
