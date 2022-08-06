@@ -1,0 +1,22 @@
+name: render site
+
+on: 
+  workflow_dispatch:
+  push:
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - name: build
+        run: |
+          npm install
+          npm run build
+          npm run export
+      - name: Upload
+        uses: actions/upload-artifact@v2
+        with:
+          path: ./out/**/*
+          name: site
