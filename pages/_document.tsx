@@ -7,7 +7,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>PuerTS Document</title>
+          {/* <title>PuerTS Document</title> */}
         </Head> 
         <body style={{ margin: 0 }}>
           <Main />
