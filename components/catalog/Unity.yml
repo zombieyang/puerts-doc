@@ -5,43 +5,62 @@
 - en: Main Concepts
   zhcn: PuerTS基础
   child: 
+  - en: install PuerTS
+    zhcn: 安装PuerTS
+    md: install
   - en: Run JS in Unity
-    zhcn: 在unity里运行JS
+    zhcn: 开始PuerTS之旅
+    md: basic-runJS
   - en: Call C# in JS
-    zhcn: C#调用JS指南
+    zhcn: JS调用C#指南
+    md: basic-js2cs
   - en: Call JS in C#
     zhcn: C#调用JS指南
+    md: basic-cs2js
+  - en: Module Loader
+    zhcn: 模块加载
+    md: basic-module
+  - en: Typescript
+    zhcn: 使用Typescript
+    md: basic-typescript
 
-- en: Advanced
-  zhcn: 深入PuerTS
+- en: Wrapper
+  zhcn: PuerTS代码生成
   child:
   - en: Generate Wrapper
-    zhcn: Wrapper生成
+    zhcn: Wrapper 生成
+    md: wrapper-wrapper
   - en: Generate Filter
-    zhcn: 生成过滤器Filter
-  - en: Blittable Copy
-    zhcn: Blittable GC优化
-  - en: Extention
-    zhcn: C#扩展函数
+    zhcn: 生成过滤器
+    md: wrapper-filter
+  - en: BlittableCopy GC optimize
+    zhcn: BlittableCopy GC优化
+    md: wrapper-blittablecopy
+  - en: Extension
+    zhcn: C# 扩展函数
+    md: wrapper-extension
 
-- en: Other Guide
-  zhcn: 其他指引
+- en: Advanced Guide
+  zhcn: 进阶指引
   child:
   - en: FAQ
     zhcn: FAQ
     md: faq
   - en: JS Inspector
     zhcn: JS调试
+    md: other-debugging
   - en: Other JS Backend
     zhcn: 其他JS后端
+    md: other-backend
   - en: Build by yourself
     zhcn: 自行构建
+    md: other-building
     
-- en: Contribute
-  zhcn: 为PuerTS贡献
-  child:
-  - en: UnitTest
-    zhcn: 单元测试
+# - en: Contribute
+#   zhcn: 为PuerTS贡献
+#   child:
+#   - en: UnitTest
+#     zhcn: 单元测试
     
-- en: JS Guide
-  zhcn: JS指南
+# - en: JS Guide
+#   zhcn: JS指南

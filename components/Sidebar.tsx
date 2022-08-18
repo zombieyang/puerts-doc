@@ -18,7 +18,7 @@ export default function Sidebar(props: { lang: string, engine: string }) {
     return (
         <section className="App-sidebar">
             <div className="App-install-bar">
-                <Link href={`/${engine}/${lang}/install`}><span className="App-install">Install</span></Link>
+                <a target="_blank" href={"https://github.com/chexiongsheng/puerts_" + engine + "_demo"}><span className="App-install">官方Demo</span></a>
             </div>
             <div className="sidebar-content">
                 {(engine === 'unity' ? UnityCatalog : UnrealCatalog)

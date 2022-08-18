@@ -10,11 +10,13 @@
     background-color: #8898b4;
     height: 50px;
     width: 25vw;
+    max-width: 24rem;
+    min-width: 19rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: calc(2vmin);
+    font-size: 1.45rem;
     color: white;
     transition: background-color 0.2s;
   }
@@ -41,6 +43,8 @@
   
   .App-sidebar {
     width: 25vw;
+    max-width: 22rem;
+    min-width: 17rem;
     background-color: #282c34;
     box-shadow: 0 0 10px #282c349e;
     /* position: relative;
@@ -62,17 +66,17 @@
     cursor: default;
   }
   .sidebar-content .catalog-block h5 {
-    font-size: 1.6vw;
+    font-size: 1.4rem;
     margin: 10px 0;
   }
   .sidebar-content .catalog-block ul {
     margin: 0;
-    padding-left: 1vw;
+    padding-left: 15px;
     list-style: '- ';
   }
   .sidebar-content .catalog-block li {
-    font-size: 1.2vw;
-    margin-top: .2vh;
+    font-size: 1.1rem;
+    margin-top: .1rem;
   }
   .sidebar-content .catalog-block li span {
     color: rgba(255, 255, 255, .4)

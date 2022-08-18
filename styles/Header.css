@@ -18,7 +18,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: left;
-    font-size: calc(2px + 2vmin);
+    font-size: 1.7rem;
     color: rgb(29, 26, 195);
     overflow: hidden;
     /* border: 1px solid #eee; */
@@ -44,11 +44,11 @@
     margin: 0;
   }
   .App-title div span{
-    font-size: calc(2vmin - 8px);
+    font-size: .9rem;
     margin-left: 6px;
   }
   .App-title .subtitle {
-    font-size: calc(2vmin - 8px);
+    font-size: .8rem;
     color: #ccc;
     margin-top: 5px;
   }

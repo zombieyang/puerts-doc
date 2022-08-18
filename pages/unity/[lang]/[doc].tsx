@@ -7,6 +7,10 @@ import { join } from "path";
 export default DocPage('unity')
 
 export async function getStaticProps({ params }) {
+    if (process.env.NODE_ENV && process.env.NODE_ENV == "development") {
+        return { props: { params } };
+    }
+
     let markdown = '';
     try {
         markdown = readFileSync(join(process.cwd(), 'public', `/doc/unity/${params.lang}/${params.doc}.md`), 'utf-8');
@@ -16,6 +20,9 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
+    if (process.env.NODE_ENV && process.env.NODE_ENV == "development") {
+        return { paths: [], fallback: true };
+    }
 
     const paths = [
         { params: { lang: 'en', doc: 'install' } },
