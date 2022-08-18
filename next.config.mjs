@@ -1,5 +1,6 @@
 import { readFileSync } from "fs";
 import { dirname, join } from "path";
+import { fileURLToPath } from "url";
 import yaml from 'yaml';
 
 // next.config.js
@@ -10,8 +11,8 @@ export default {
     },
   },
   exportPathMap: async function () {
-    const UnityCatalog = yaml.parse(readFileSync(join(dirname(import.meta.url).replace(/^file:[\\/]*/, ''), './components/catalog/Unity.yml'), 'utf-8'))
-    const UnrealCatalog = yaml.parse(readFileSync(join(dirname(import.meta.url).replace(/^file:[\\/]*/, ''), './components/catalog/Unreal.yml'), 'utf-8'))
+    const UnityCatalog = yaml.parse(readFileSync(join(dirname(fileURLToPath(import.meta.url)), './components/catalog/Unity.yml'), 'utf-8'))
+    const UnrealCatalog = yaml.parse(readFileSync(join(dirname(fileURLToPath(import.meta.url)), './components/catalog/Unreal.yml'), 'utf-8'))
 
     const paths = {
       '/': { page: '/' },
