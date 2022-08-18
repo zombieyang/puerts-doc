@@ -56,9 +56,10 @@
     zhcn: 自行构建
     md: other-building
     
-# - en: Contribute
-#   zhcn: 为PuerTS贡献
-#   child:
+- en: Community
+  zhcn: 社区为PuerTS贡献的内容
+  md: other-community
+  # child:
 #   - en: UnitTest
 #     zhcn: 单元测试
     
