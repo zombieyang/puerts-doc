@@ -12,12 +12,17 @@ const fetcher = (url: string) => fetch(url).then((res) => {
 })
 
 export async function getStaticProps({ params }) {
-    let markdown = '';
-    try {
-        markdown = readFileSync(join(process.cwd(), 'public', `/doc/unity/${params.lang}/${params.doc}.md`), 'utf-8');
-    } catch (e) { }
 
-    return { props: { markdown, ...params } }
+  if (params.doc instanceof Array) {
+    params.doc = params.doc.join('/')
+  }
+
+  let markdown = '';
+  try {
+    markdown = readFileSync(join(process.cwd(), 'public', `/doc/unity/${params.lang}/${params.doc}.md`), 'utf-8');
+  } catch (e) { }
+
+  return { props: { markdown, ...params } }
 }
 
 export async function getStaticPaths() {
@@ -26,8 +31,8 @@ export async function getStaticPaths() {
   UnrealCatalog.forEach(iter)
   function iter(item) {
     if (item.md) {
-      paths.push({ params: { lang: 'en', doc: item.md } })
-      paths.push({ params: { lang: 'zhcn', doc: item.md } })
+      paths.push({ params: { lang: 'en', doc: item.md.split('/') } })
+      paths.push({ params: { lang: 'zhcn', doc: item.md.split('/') } })
     }
     if (item.child) {
       item.child.forEach(iter);

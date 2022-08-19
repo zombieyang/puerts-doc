@@ -1,5 +1,6 @@
 - en: PuerTS Unreal
   zhcn: PuerTS Unreal
+  md: 'readme'
   child:
     - en: Install PuerTS
       zhcn: 安装 PuerTS

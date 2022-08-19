@@ -7,8 +7,8 @@ import { join } from "path";
 export default DocPage('unity')
 
 export async function getStaticProps({ params }) {
-    if (process.env.NODE_ENV && process.env.NODE_ENV == "development") {
-        return { props: { params } };
+    if (params.doc instanceof Array) {
+        params.doc = params.doc.join('/')
     }
 
     let markdown = '';
@@ -20,19 +20,13 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-    if (process.env.NODE_ENV && process.env.NODE_ENV == "development") {
-        return { paths: [], fallback: true };
-    }
-
     const paths = [
-        { params: { lang: 'en', doc: 'install' } },
-        { params: { lang: 'zhcn', doc: 'install' } }
     ];
     UnityCatalog.forEach(iter)
     function iter(item) {
         if (item.md) {
-            paths.push({ params: { lang: 'en', doc: item.md } })
-            paths.push({ params: { lang: 'zhcn', doc: item.md } })
+            paths.push({ params: { lang: 'en', doc: item.md.split('/') } })
+            paths.push({ params: { lang: 'zhcn', doc: item.md.split('/') } })
         }
         if (item.child) {
             item.child.forEach(iter);

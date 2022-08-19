@@ -28,7 +28,7 @@ export default function Layout(props: LayoutProps) {
             <article className="App-body">
                 <Sidebar engine={props.engine} lang={props.lang} />
                 <section className="App-content markdown-body">
-                    <a className="App-doc-pr" target="_blank" href={"https://github.com/Tencent/puerts/edit/master/doc/" + [props.engine, props.lang, props.doc].join('/')}>{PRText}</a>
+                    <a className="App-doc-pr" target="_blank" href={"https://github.com/Tencent/puerts/edit/master/doc/" + [props.engine, props.lang, props.doc].join('/') + ".md"}>{PRText}</a>
                     <ReactMarkdown children={props.markdown} remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]} />
                 </section>
             </article>
