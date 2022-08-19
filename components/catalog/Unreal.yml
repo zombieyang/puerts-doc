@@ -12,13 +12,13 @@
       zhcn: 调试指南
       md: 'vscode_debug'
     - en: TS and unreal interaction
-      zhcn: TS and unreal interaction
+      zhcn: TS和引擎的相互调用
       md: 'interact_with_uclass'
     - en: Template-based static binding
-      zhcn: Template-based static binding
+      zhcn: 基于模板的静态绑定
       md: 'template_binding'
     - en: Mixin
-      zhcn: Mixin
+      zhcn: 蓝图Mixin
       md: 'mixin'
     - en: FAQ
       zhcn: FAQ
