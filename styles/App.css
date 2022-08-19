@@ -16,15 +16,24 @@
   align-items: stretch;
   justify-content: left;
   overflow: hidden;
+  position: relative;
 }
 
 .App-content {
-  box-shadow: inset 0px 10px 10px -10px #282c349e,
-              inset 10px 0px 10px -10px #282c349e;
+  /* box-shadow: inset 0px 10px 10px -10px #282c349e,
+              inset 10px 0px 10px -10px #282c349e; */
+  border: 1px solid #282c349e;
   background-color: white;
   width: 80vw;
   overflow-x: scroll;
   padding: 60px 40px;
-  /* position: relative;
-  z-index: -2; */
+}
+
+.App-content .App-doc-pr {
+  color: #666;
+  font-size: .8rem;
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  padding-right: 1.5rem;
 }

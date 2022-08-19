@@ -16,7 +16,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 1.45rem;
+    font-size: 1.35rem;
     color: white;
     transition: background-color 0.2s;
   }
@@ -36,7 +36,7 @@
     left: 100%;
     transform: rotate(-45deg);
     transform-origin: left bottom;
-    box-shadow: 0 0 10px #282c349e;
+    box-shadow: 3px 0 10px #282c349e;
     transition: background-color 0.2s;
     z-index: -1;
   }
@@ -46,7 +46,6 @@
     max-width: 22rem;
     min-width: 17rem;
     background-color: #282c34;
-    box-shadow: 0 0 10px #282c349e;
     /* position: relative;
     z-index: -3; */
   }
@@ -66,7 +65,7 @@
     cursor: default;
   }
   .sidebar-content .catalog-block h5 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     margin: 10px 0;
   }
   .sidebar-content .catalog-block ul {
@@ -75,7 +74,7 @@
     list-style: '- ';
   }
   .sidebar-content .catalog-block li {
-    font-size: 1.1rem;
+    font-size: .95rem;
     margin-top: .1rem;
   }
   .sidebar-content .catalog-block li span {

@@ -1,5 +1,5 @@
 # 开始PuerTS之旅
-首先，请跟随[安装指引](./install)将PuerTS装入你的Unity项目
+首先，请跟随[安装指引](../install.md)将PuerTS装入你的Unity项目
 
 ------------
 
@@ -15,7 +15,7 @@ void Start() {
 ```
 执行后，你能看见Unity控制台中打印出了`Hello world`。
 
-![throttle cpu](/1.png)
+![throttle cpu](../../../pic/1.png)
 
 成功了！
 

@@ -19,6 +19,8 @@
     "yaml-loader": "^0.8.0"
   },
   "devDependencies": {
+    "shelljs": "^0.8.5",
+    "iconv-lite": "^0.6.3",
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.14",
     "@types/react-dom": "^18.0.5",

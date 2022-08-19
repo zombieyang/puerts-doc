@@ -2,43 +2,43 @@
   zhcn: Introduce to PuerTS
   md: 'readme'
 
-- en: Main Concepts
-  zhcn: PuerTS基础
+- en: Tutorial
+  zhcn: 入门教程
   child: 
   - en: install PuerTS
-    zhcn: 安装PuerTS
+    zhcn: 安装 PuerTS
     md: install
-  - en: Run JS in Unity
-    zhcn: 开始PuerTS之旅
-    md: basic-runJS
+  - en: Hello World
+    zhcn: Hello World
+    md: tutorial/runJS
   - en: Call C# in JS
-    zhcn: JS调用C#指南
-    md: basic-js2cs
+    zhcn: JS 调用 C#指南
+    md: tutorial/js2cs
   - en: Call JS in C#
-    zhcn: C#调用JS指南
-    md: basic-cs2js
+    zhcn: C# 调用 JS指南
+    md: tutorial/cs2js
   - en: Module Loader
     zhcn: 模块加载
-    md: basic-module
+    md: tutorial/module
   - en: Typescript
     zhcn: 使用Typescript
-    md: basic-typescript
+    md: tutorial/typescript
 
 - en: Wrapper
-  zhcn: PuerTS代码生成
+  zhcn: 代码生成
   child:
   - en: Generate Wrapper
     zhcn: Wrapper 生成
-    md: wrapper-wrapper
+    md: wrapper/wrapper
   - en: Generate Filter
     zhcn: 生成过滤器
-    md: wrapper-filter
+    md: wrapper/filter
   - en: BlittableCopy GC optimize
-    zhcn: BlittableCopy GC优化
-    md: wrapper-blittablecopy
+    zhcn: BlittableCopy GC 优化
+    md: wrapper/blittablecopy
   - en: Extension
     zhcn: C# 扩展函数
-    md: wrapper-extension
+    md: wrapper/extension
 
 - en: Advanced Guide
   zhcn: 进阶指引
@@ -47,18 +47,24 @@
     zhcn: FAQ
     md: faq
   - en: JS Inspector
-    zhcn: JS调试
-    md: other-debugging
+    zhcn: JS 调试
+    md: other/debugging
   - en: Other JS Backend
-    zhcn: 其他JS后端
-    md: other-backend
+    zhcn: 其他 JS 后端
+    md: other/backend
   - en: Build by yourself
     zhcn: 自行构建
-    md: other-building
+    md: other/building
     
-- en: Community
-  zhcn: 社区为PuerTS贡献的内容
-  md: other-community
+- en: More
+  zhcn: 更多
+  child: 
+  - en: PuerTS Packages from Community
+    zhcn: 来自社区的 PuerTS 扩展
+    md: other/community
+  - en: 'HTML in UE/Unity: PixUI'
+    zhcn: 'UE/Unity 里的HTML: PixUI'
+    md: other/PixUI
   # child:
 #   - en: UnitTest
 #     zhcn: 单元测试

@@ -22,9 +22,12 @@ export default function (engine: string): (props: DocPageProps) => JSX.Element {
 
         const { query } = useRouter()
 
+        if (query.doc instanceof Array) {
+            query.doc = query.doc.join('/')
+        }
+
         if (
             !(query.lang instanceof Array) &&
-            !(query.doc instanceof Array) &&
             ['zhcn', 'en', 'zhtw'].indexOf(query.lang) != -1
         ) {
             doc = query.doc;
@@ -49,7 +52,8 @@ export default function (engine: string): (props: DocPageProps) => JSX.Element {
 
         return <Layout
             lang={lang}
-            engine="unity"
+            engine={engine}
+            doc={doc}
             markdown={markdown}
         />;
     }

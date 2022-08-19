@@ -15,10 +15,15 @@ function ALink(item, engine, lang) {
 
 export default function Sidebar(props: { lang: string, engine: string }) {
     const { lang, engine } = props;
+
+    const DemoButtonText = {
+        zhcn: '官方Demo >>',
+        en: 'Official Demo >>'
+    }[lang] || 'Demo >>'
     return (
         <section className="App-sidebar">
             <div className="App-install-bar">
-                <a target="_blank" href={"https://github.com/chexiongsheng/puerts_" + engine + "_demo"}><span className="App-install">官方Demo</span></a>
+                <a target="_blank" href={"https://github.com/chexiongsheng/puerts_" + engine + "_demo"}><span className="App-install">{DemoButtonText}</span></a>
             </div>
             <div className="sidebar-content">
                 {(engine === 'unity' ? UnityCatalog : UnrealCatalog)
