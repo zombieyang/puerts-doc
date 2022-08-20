@@ -64,7 +64,7 @@
     md: other/community
   - en: 'HTML in UE/Unity: PixUI'
     zhcn: 'UE/Unity 里的HTML: PixUI'
-    md: other/PixUI
+    md: other/pixui
   # child:
 #   - en: UnitTest
 #     zhcn: 单元测试
